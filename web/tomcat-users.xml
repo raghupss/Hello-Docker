@@ -1,0 +1,6 @@
+<role rolename = "manager-gui"/> 
+<role rolename="admin-gui"/> 
+<role rolename="manager-script"/> 
+<user username="raghu" password="raghu" roles="manager-gui, admin-gui"/>
+<user username="deployer" password="deployer" roles="managerscript, manager-gui"/>
+

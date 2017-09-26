@@ -1,0 +1,12 @@
+version: "2"
+services:
+ build_tool:
+  image: maven:latest
+  volumes: ["./:/mymaven"]
+  command: bash -c "cd /mymaven && mvn package"
+ web:
+  build:
+   context: .
+  ports:
+   - 8082:8080
+  
